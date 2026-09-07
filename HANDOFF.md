@@ -1,5 +1,10 @@
 # Docs handoff
 
+## 2026-09-07 — codex — GitHub and Railway publication
+**Did:** Initialized this previously non-git docs directory, created GitHub `4lphaAI/4lpha-docs` main, and pushed the documentation plus Railway static-host setup. Railway project `4lpha-docs` / production service `docs` is GitHub-backed from `4lphaAI/4lpha-docs@main`, serves `npm start` on `PORT=4318`, and deployment `35059df2-8397-4975-9d18-257660608e53` succeeded. Attached `docs.4lpha.tech` to target port 4318.
+**Open:** DNS ownership verification remains external to this repo. Cloudflare needs CNAME `docs` → `xmmpowrz.up.railway.app` plus TXT `_railway-verify.docs` = `railway-verify=0c7b32238af30f715427e0024c6b32564b0c4d481eaa526f3a6fd4f97d7db06a`; Railway will then issue the certificate.
+**Watch:** Do not point a conflicting A/AAAA record at `docs`. GitHub is now the deploy source; later pushes to main trigger Railway updates.
+
 ## 2026-09-07 — codex — Homepage title
 **Did:** Changed the Start-here article title in `index.html` from “Start with 4lpha” to “Start with 4lpha Agent Marketplace”.
 **Open:** None.
