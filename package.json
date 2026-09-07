@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "preview": "node preview.mjs",
+    "start": "node preview.mjs",
     "build": "node build.mjs"
   },
   "devDependencies": {
