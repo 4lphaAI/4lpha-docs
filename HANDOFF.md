@@ -1,5 +1,30 @@
 # Docs handoff
 
+## 2026-09-07 — codex — Tutorials video
+**Did:** Added a `Tutorials` navigation section and a `Grid Agent tutorial` article to `index.html`, with a clickable YouTube thumbnail preview linking to `https://youtu.be/I5uyElPdtfo`.
+**Open:** None for this request.
+**Watch:** The preview image is loaded from YouTube's thumbnail endpoint; the docs page does not download or self-host the video.
+
+## 2026-09-07 — codex — Agent gallery cleanup and naming
+**Did:** Removed the extra gallery panels `Ladder BNB`, `Vector Trader`, `Degen Trader` and `Atlas Trader`. Renamed the remaining panels to `Grid Agent`, `AR Agent`, `AC Agent`, `Trading Agent` and `Lending Agent` in `explainer-src/entry.js`, then rebuilt the embedded bundle in `index.html`.
+**Open:** None for this request.
+**Watch:** The article routes remain unchanged; this only changes the homepage gallery labels and available selectors.
+
+## 2026-09-07 — codex — Grid explainer refresh
+**Did:** Replaced `explainer-src/GridExplainer.js` with the current execution-plane Grid Keeper animation: eight scenes, three buy fills, three sell fills, armed/filled ladder states, scrolling fill markers, round-trip counter and realized total. Added the JSX loader to `build.mjs` and rebuilt the embedded standalone bundle in `index.html`.
+**Open:** None for this request.
+**Watch:** `explainer-src/GridExplainer.js` is a docs-local copy; execution remains reference-only. The animation is illustrative and does not represent live prices or returns.
+
+## 2026-09-07 — codex — Grid terminology and positioning copy
+**Did:** Updated the rendered standalone docs artifact `index.html`: replaced
+user-facing Grid `buy/sell rung` wording with `buy/sell level` / `grid level`,
+and added `Best for` plus `Ideal assets` guidance for the current paired shift
+grid.
+**Open:** None for this request.
+**Watch:** The examples are subject to the supported-pool allowlist and measured
+liquidity/economics; WBTC is listed only where the canonical BNB Chain pool is
+actually liquid.
+
 ## 2026-09-07 — codex — GitHub and Railway publication
 **Did:** Initialized this previously non-git docs directory, created GitHub `4lphaAI/4lpha-docs` main, and pushed the documentation plus Railway static-host setup. Railway project `4lpha-docs` / production service `docs` is GitHub-backed from `4lphaAI/4lpha-docs@main`, serves `npm start` on `PORT=4318`, and deployment `35059df2-8397-4975-9d18-257660608e53` succeeded. Attached `docs.4lpha.tech` to target port 4318.
 **Open:** DNS ownership verification remains external to this repo. Cloudflare needs CNAME `docs` → `xmmpowrz.up.railway.app` plus TXT `_railway-verify.docs` = `railway-verify=0c7b32238af30f715427e0024c6b32564b0c4d481eaa526f3a6fd4f97d7db06a`; Railway will then issue the certificate.

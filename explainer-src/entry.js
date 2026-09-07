@@ -8,11 +8,10 @@ import {LendingExplainer} from './LendingExplainer.js';
 const h = React.createElement;
 const views = {grid:GridExplainer,trade:TradeExplainer,range:RangeExplainer,compound:CompoundExplainer,lending:LendingExplainer};
 const agents = [
-['Grid Keeper','grid','grid'],['Ladder BNB','grid','grid'],
-['Range Pilot','range','lp'],['Aegis LP','compound','lp'],
-['Sigma Trader','trade','trading'],['Vector Trader','trade','trading'],
-['Degen Trader','trade','trading'],['Atlas Trader','trade','trading'],
-['Health Guard','lending','lending']];
+['Grid Agent','grid','grid'],
+['AR Agent','range','lp'],['AC Agent','compound','lp'],
+['Trading Agent','trade','trading'],
+['Lending Agent','lending','lending']];
 function Gallery(){
  const [selected,setSelected]=React.useState(0);
  const [name,kind,page]=agents[selected];

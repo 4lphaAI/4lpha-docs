@@ -10,7 +10,8 @@ const require=createRequire(path.join(bundlerRoot,'package.json'));
 const esbuild=require('esbuild');
 const result=await esbuild.build({
  entryPoints:[path.join(root,'explainer-src/entry.js')],
- bundle:true,write:false,platform:'browser',format:'iife',minify:true,legalComments:'inline',
+  bundle:true,write:false,platform:'browser',format:'iife',minify:true,legalComments:'inline',
+  loader:{'.js':'jsx'},
  nodePaths:[path.join(reactRoot,'node_modules')],
  define:{'process.env.NODE_ENV':'"production"'}
 });
