@@ -1,5 +1,10 @@
 # Docs handoff
 
+## 2026-09-08 — codex — LP Agent tutorial video
+**Did:** Added `LP Agent Tutorials` to the `Tutorials` navigation group in `index.html`, with a clickable YouTube thumbnail preview linking to `https://youtu.be/1uIeKGeg1no`.
+**Open:** None for this request.
+**Watch:** The preview image is loaded from YouTube's thumbnail endpoint; the docs page does not download or self-host the video.
+
 ## 2026-09-07 — codex — Tutorials video
 **Did:** Added a `Tutorials` navigation section and a `Grid Agent tutorial` article to `index.html`, with a clickable YouTube thumbnail preview linking to `https://youtu.be/I5uyElPdtfo`.
 **Open:** None for this request.
