@@ -45,7 +45,7 @@ function mount(){
   const root=createRoot(wrapper);roots.push(root);
   root.render(kind==='gallery'?h(Gallery):h(React.Fragment,null,
    h(views[kind],{protocol:kind==='lending'?'Venus':'PancakeSwap v3'}),
-   h('p',{className:'example-note'},'Illustrative animation · Sample values and compressed timing explain the strategy, not live performance. '+(kind==='lending'?'Lending is deferred in the browser MVP.':'Execution can wait, fail or be refused.'))));
+   h('p',{className:'example-note'},'Illustrative animation · Sample values and compressed timing explain the strategy, not live performance. '+'Execution can wait, fail or be refused.')));
  }
 }
 window.addEventListener('hashchange',mount);

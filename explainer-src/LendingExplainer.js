@@ -24,7 +24,7 @@ const SCENES = [{
 }, {
   t: 8200,
   title: "Back above your target, then it waits again",
-  body: "This example recovers above the target. Real rescues can fail or arrive too late, and the browser lending journey remains deferred."
+  body: "This example recovers above the target. Real rescues can fail, arrive too late, or be refused when no permitted action helps."
 }];
 const TOTAL = 10000;
 const DRIFT_AT = 1600,
